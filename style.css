@@ -1,0 +1,253 @@
+* .about-page {
+    box-sizing: border-box;
+}
+
+*,
+.con,
+.img-fluid {
+    box-sizing: border-box;
+}
+
+.img01 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.about-page {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(assets/why-us.png);
+    background-size: cover;
+    background-position: center;
+    color: #efefef;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 600px;
+}
+
+@media only screen and (max-width: 768px) {
+    .about-page {
+        height: 700px;
+    }
+    .conwd {
+        text-align: center;
+    }
+}
+
+.conwd h1 {
+    font-size: 40px;
+    background-color: #005aa3;
+    color: #fff;
+    height: 50px;
+    width: 250px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.btn1 {
+    text-decoration: none;
+}
+
+.pag1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: -2em;
+}
+
+.headline {
+    text-align: center;
+}
+
+.lastsec {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 3em;
+}
+
+
+/*hr styling*/
+
+.offer {
+    padding-top: 1em;
+}
+
+hr {
+    border: solid;
+    border-top: 3px double #333;
+    color: white;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+hr:after {
+    background: #fff;
+    content: 'About us';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+
+
+/*hover */
+
+.nav-link:hover {
+    background-color: #4a95ff;
+}
+
+.footer {
+    width: 100%;
+    font-size: .9em;
+    background-color: #333;
+    color: #efefef;
+    padding: 1.1em 2em;
+    letter-spacing: 1px;
+}
+
+#footer {
+    margin-top: 3em;
+}
+
+
+/*mobile query small screen*/
+
+@media only screen and (max-width: 768px) {
+    .lastsec {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 1em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .about-page {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 1em;
+        -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+    }
+}
+
+.con1 {
+    display: grid;
+    grid-template-columns: 300px, 40px;
+}
+
+.img01 {
+    border-radius: 50%;
+}
+
+.img-thumbnail {
+    margin-top: 1em;
+    padding: 10px 10px 20px 10px;
+}
+
+.cgrad {
+    background-image: radial-gradient( circle farthest-corner at 12.3% 19.3%, rgba(85, 88, 218, 1) 0%, rgba(95, 209, 249, 1) 100.2%);
+    padding-bottom: 1em;
+}
+
+.img-container {
+    box-sizing: border-box;
+    padding-top: 4em;
+    margin-top: 3em;
+}
+
+.hor {
+    border-bottom: #fff 5px ridge;
+    margin: 1em;
+}
+
+.cimg {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.textimg {
+    text-align: center;
+    color: #fff;
+}
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    width: 280px;
+}
+
+
+/* The popup form - hidden by default */
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+
+/* Add styles to the form container */
+
+.form-container {
+    width: 100%;
+    padding: 5px;
+    background-color: white;
+}
+
+
+/* Full-width input fields */
+
+.form-container input[type=text],
+.form-container input[type=password] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+
+/* When the inputs get focus, do something */
+
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+/* Set a style for the submit/login button */
+
+.form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 5px;
+    opacity: 0.8;
+}
+
+
+/* Add a red background color to the cancel button */
+
+.form-container .cancel {
+    background-color: red;
+}
+
+
+/* Add some hover effects to buttons */
+
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}

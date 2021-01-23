@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--style.css-->
+    <link rel="stylesheet" href="styles.css">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!--bootstrap extension-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>PhotoMagik</title>
+</head>
+
+<body>
+    <!--navbar media-->
+    <nav class="navbar navbar-light bg-dark" id="home">
+        <div class="container">
+            <div class="align-items-start text-light itemnum">
+                <span class="sp">
+					<b>Phone: </b><i class="fa fa-phone" aria-hidden="true" style="color:#007bff;"></i>+234 8064427860
+				</span>
+                <span>
+					<b>Email: </b><i class="fas fa-envelope-square" aria-hidden="true" style="color:#007bff;"></i> Sam4rano@outlook.com
+				</span>
+            </div>
+            <div class="follow py-3">
+                <a href="https://facebook.com/oyerinde.samorano"> <i class="fab fa-facebook" style="color:#007bff;"></i></a>
+                <a href="#"> <i class="fab fa-youtube" style="color:red;"></i></a>
+                <a href="https://twitter.com/Samueloye91"> <i class="fab fa-twitter" style="color:#007bff;"></i></a>
+                <a href="#"> <i class="fab fa-google-plus" style="color:red;"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!--navbar social-->
+    <nav class="navbar py-3 navbar-light navbar-expand-sm bg-light">
+        <a href="#" class="navbar-brand text-uppercase font-italic  pt-2 text-light">
+            <span style="color:black;"><i class="fas fa-camera"></i> Photo</span><span style="color: rgb(0, 123, 255);">Magik</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks">
+			<span class="navbar-toggler-icon" style="color:#fff;"></span>
+		</button>
+        <div class="collapse navbar-collapse" id="navbarLinks">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active text-uppercase  text-dark">home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about-us" class="nav-link text-uppercase text-dark">about us </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-uppercase text-dark">services </a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link text-uppercase text-dark">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#buttonc" class="nav-link text-uppercase text-dark">contact us </a>
+                </li>
+                <button type="button" class="btn btn-outline-dark btn-md"><a href="booking.html" class="btn1">Book Now</a></button>
+            </ul>
+        </div>
+    </nav>
+    <!--end of navbar social-->
+    <!--navbar logo and page-->
+    <section class="about-page pag1">
+        <div class="container con1">
+            <img src="assets/cmm.jpeg" class="img01 img-fluid" alt="photographer image">
+        </div>
+        <div class="conwd">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="headline">
+                <h3>Focus</h3>
+                <h1 class="ch1">Photography</h1>
+                <h2>Services</h2>
+            </div>
+        </div>
+    </section>
+    <!--end of navbar logo and page-->
+    <section class="lastsec">
+        <div class="container sec-01">
+            <div class="bg-primary aboutus ">
+                <hr class="text-primary fs-2">
+            </div>
+            <div class="offer">
+                <a href="#" id="about-us"></a>
+                <h3>We Are Offering The Best <span>Photography</span> Services For You</h3>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+            <button type="button" id="buttonc" class="open-button btn btn-outline-dark btn-md" onclick="openForm()">Contact Us</button>
+            <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                    <h1>Contact Form</h1>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="country">States</label>
+                    <select id="states" name="states">
+					<option value="abia">Abia</option>
+					<option value="Akwa-ibom">Akwa-Ibom</option>
+					<option value="Adamawa">Adamawa</option>
+
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:120px;width:100%;"></textarea>
+
+                    <button type="submit" class="btn">Submit</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+        </div>
+        <div class="container sec-02">
+            <img src="assets/img01.jpeg" class="img-fluid">
+        </div>
+    </section>
+    <section class="img-container">
+        <div class="cgrad">
+            <h3 class="text-center text-white">Picture speak</h3>
+            <p class="hor"></p>
+            <div class="container-fluid con">
+                <div class="row">
+                    <div class="col cimg">
+                        <img src="assets/img1.jpeg" class="img-fluid img-thumbnail rounded" alt="image one">
+                        <div>
+                            <h4 class="textimg">Beautiful Sunset</h4>
+                        </div>
+                    </div>
+                    <div class="col cimg">
+                        <img src="assets/img2.jpeg" class="img-fluid img-thumbnail rounded" alt="image two">
+                        <div>
+                            <h4 class="textimg">Sunset Horizon</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid con">
+                <div class="row">
+                    <div class="col cimg">
+                        <img src="assets/imga.jpeg" class="img-fluid img-thumbnail rounded" alt="image three">
+                        <div>
+                            <h4 class="textimg">River bank night</h4>
+                        </div>
+                    </div>
+                    <div class="col cimg">
+                        <img src="assets/img4.jpeg" class="img-fluid img-thumbnail rounded" alt="image four">
+                        <div>
+                            <h4 class="textimg">Cloud on Waters</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid con">
+                <h2></h2>
+                <div class="row">
+                    <div class="col cimg">
+                        <img src="assets/img1.jpeg" class="img-fluid img-thumbnail rounded" alt="image one">
+                        <div>
+                            <h4 class="textimg">Beautiful Sunset</h4>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="assets/img2.jpeg" class="img-fluid img-thumbnail rounded" alt="image two">
+                        <div>
+                            <h4 class="textimg">Sunset Horizon</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid con">
+                <div class="row">
+                    <div class="col cimg">
+                        <img src="assets/cmm.jpeg" class="img-fluid img-thumbnail rounded" alt="image three">
+                        <div>
+                            <h4 class="textimg">Professional Photographer</h4>
+                        </div>
+                    </div>
+                    <div class="col cimg">
+                        <img src="assets/img4.jpeg" class="img-fluid img-thumbnail rounded" alt="image four">
+                        <div>
+                            <h4 class="textimg">Cloud on Waters</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer section-->
+        <div id="footer" class="container-fluid text-center">
+            <div class="footer text-center">
+                <div class="container">
+                    <div class="col">
+                        <p class="text-center"> Copyright © PhotoMagik - 2020 <br>Designed And Developed by <span class="text-primary"> <a href="#" target="_blank">Sam4rano</a> </span></p>
+                    </div>
+                    <div class="col">
+                        <a class="scroll-link top-link" href="#home" id="#home">
+                            <i class="fas fa-arrow-up fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+<!-- javascript -->
+<script src="app.js"></script>
+
+</html>

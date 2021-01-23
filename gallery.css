@@ -1,0 +1,172 @@
+
+body {
+  font-family: Arial;
+  margin: 0;
+  background-color: grey;
+}
+
+* {
+  box-sizing: border-box;
+}
+.portfolio {
+  margin-top: 1em;
+  border-radius: 20px;
+}
+
+img {
+  border-radius: 12px;
+  max-width:95%;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin-left:1em;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.contain {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.roww:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+.containeer {
+  height: 400px;
+  background: red;
+  background: linear-gradient(to bottom, #ffffff, #ff8855); /* Standard syntax */
+}
+
+.square {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(to bottom, rgba(240,240,180, 0.2), rgba(100, 20, 30, 0.8));
+  
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  transform: rotate(45deg);
+  top: 250px;
+  left: calc(50vw - 150px);
+  animation: squareMove 2.25s;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  background: linear-gradient(to bottom, rgba(255,255,255, 0.2), rgba(20, 150, 180, 0.8));
+  
+  display: grid;
+  top: 300px;
+  left: calc(50vw - 100px);
+  
+  animation: circleMove 2s;
+}
+
+.text {
+  font-family: "helvetica", sans-serif;
+  display:flex;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  font-size: 20px;
+  margin-top: 0.5em;
+  padding: 0;
+
+
+  left: calc(50vw - 176px);
+  color:white;
+  
+  animation: textMove 2.5s;
+}
+
+@keyframes squareMove {
+  from {bottom: -500px;}
+  to {bottom: 250px;}
+}
+
+@keyframes circleMove {
+  from {bottom: -500px;}
+  to {top: 300px;}
+}
+
+@keyframes textMove {
+  from {bottom: -500px;}
+  to {bottom: 388px;}
+}
