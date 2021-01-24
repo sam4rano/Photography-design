@@ -1,8 +1,17 @@
+/*navbar styling*/
+
 * .about-page {
     box-sizing: border-box;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 *,
+ ::before,
+::after,
 .con,
 .img-fluid {
     box-sizing: border-box;
@@ -12,6 +21,10 @@
     display: flex;
     text-align: center;
     justify-content: center;
+}
+
+.text-dark {
+    font-size: 14px;
 }
 
 .about-page {
@@ -34,18 +47,15 @@
     }
 }
 
-.conwd h1 {
-    font-size: 40px;
-    background-color: #005aa3;
-    color: #fff;
-    height: 50px;
-    width: 250px;
-    border-radius: 10px;
-    text-align: center;
-}
-
 .btn1 {
     text-decoration: none;
+}
+
+.ch1 {
+    background-color: rgb(0, 123, 255);
+    color: #fff;
+    border-radius: 10px;
+    padding-bottom: 4px;
 }
 
 .pag1 {
@@ -56,6 +66,7 @@
 
 .headline {
     text-align: center;
+    margin: 10px;
 }
 
 .lastsec {
@@ -104,6 +115,21 @@ hr:after {
     letter-spacing: 1px;
 }
 
+.containerc {
+    display: flex;
+    justify-content: center;
+}
+
+.conh1 {
+    text-align: center;
+}
+
+.follow {
+    border-style: solid;
+    border-color: rgb(0, 123, 255);
+    border-width: 0 0 3px 0;
+}
+
 #footer {
     margin-top: 3em;
 }
@@ -144,13 +170,9 @@ hr:after {
 }
 
 .cgrad {
-    background-image: radial-gradient( circle farthest-corner at 12.3% 19.3%, rgba(85, 88, 218, 1) 0%, rgba(95, 209, 249, 1) 100.2%);
-    padding-bottom: 1em;
-}
-
-.img-container {
     box-sizing: border-box;
-    padding-top: 4em;
+    background-image: radial-gradient( circle farthest-corner at 12.3% 19.3%, rgba(85, 88, 218, 1) 0%, rgba(95, 209, 249, 1) 100.2%);
+    padding: 4em 1em;
     margin-top: 3em;
 }
 
@@ -166,6 +188,13 @@ hr:after {
 .textimg {
     text-align: center;
     color: #fff;
+}
+
+#contact {
+    background: #efefef;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #777;
 }
 
 
