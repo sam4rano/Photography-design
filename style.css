@@ -12,21 +12,13 @@
 *,
  ::before,
 ::after,
-.con,
-.img-fluid {
+.con {
     box-sizing: border-box;
 }
-
-.img01 {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-
 .text-dark {
     font-size: 14px;
 }
-
+/*about section styling*/
 .about-page {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(assets/why-us.png);
     background-size: cover;
@@ -35,9 +27,108 @@
     background-attachment: fixed;
     padding-top: 50px;
     padding-bottom: 50px;
-    height: 600px;
+    height: 550px;
 }
+.abtext p {
+    font-size: 20px;
+    font-weight: lighter;
+}
+/*navbar styling*/
+#navbarlinks {
+    display: flex;
+    flex-direction: row;
+}
+li a {
+    font-size: 20px;
+    font-weight: 500;
+}
+.sp b, .sp i {
+    font-size: 20px;
+}
+.sp i {
+    padding: 5px;
+}
+.headline h1 {
+    text-align: center;
+    
+}
+.py-3 .sp {
+    display: flex;
+}
+/*call to action styling*/
+.ch1 {
+    background-color: rgb(0, 123, 255);
+    color: #fff;
+    border-radius: 10px;
+    padding-bottom: 5px;
+}
+.img01 {
+    width: 250px;
+    height: 200px;
+    min-width: 100px;
+    min-height: 100px;
+}
+/*media query for mobile*/
+@media only screen and (max-width: 280px) {
+    .pag1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top:200px;
+        height: 600px;
+    }
+    .img01 {
+        padding-top: 30px;
+    }
+    .abtext p {
+        padding: 15px;
+    }
+    .abtext {
+        padding-bottom: 200px;
+    }
+    li a {
+    font-size: 10px;
+    font-weight: 300;
+    }
+    .sp b, .sp i {
+        font-size: 10px;
+    }
+    .sp i {
+        padding: 10px;
+    }
+    .slink1 {
+        padding: 5px;
+    }
+    .offer h4 {
+        padding: 20px;
+    }
+    .pcon p {
+        padding: 20px;
+    }
+    .open-button {
+        padding: 20px;
+        width: 130px;
+    }
+    .img-fluid {
+        padding: 20px;
+    }
+    .contact-info h1,
+    .contact-info div 
+    {
+        padding: 20px;
+    }
 
+}
+@media only screen and (min-width: 360px) {
+    
+}
+@media only screen and (min-width: 480px) {
+    
+}
+@media only screen and (min-width: 540px) {
+    
+}
 @media only screen and (max-width: 768px) {
     .about-page {
         height: 700px;
@@ -51,17 +142,12 @@
     text-decoration: none;
 }
 
-.ch1 {
-    background-color: rgb(0, 123, 255);
-    color: #fff;
-    border-radius: 10px;
-    padding-bottom: 4px;
-}
+
 
 .pag1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: -2em;
+    gap:10px;
 }
 
 .headline {
@@ -82,7 +168,7 @@
     padding-top: 1em;
 }
 
-hr {
+/*hr {
     border: solid;
     border-top: 3px double #333;
     color: white;
@@ -98,7 +184,7 @@ hr:after {
     position: relative;
     top: -13px;
 }
-
+*/
 
 /*hover */
 
@@ -161,7 +247,7 @@ hr:after {
 }
 
 .img01 {
-    border-radius: 50%;
+    border-radius: 40%;
 }
 
 .img-thumbnail {
@@ -204,10 +290,12 @@ hr:after {
     background-color: #555;
     color: white;
     padding: 16px 20px;
+    text-align: center;
     border: none;
     cursor: pointer;
     opacity: 0.8;
-    width: 280px;
+    padding: 20px;
+    width: 220px;
 }
 
 
@@ -279,4 +367,14 @@ hr:after {
 .form-container .btn:hover,
 .open-button:hover {
     opacity: 1;
+}
+/*footer styling*/
+.footer {}
+.fcon {
+    display: flex;
+    margin: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
 }
