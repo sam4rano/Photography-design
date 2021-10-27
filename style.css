@@ -1,25 +1,38 @@
 /*navbar styling*/
 
-* .about-page {
+*,
+.about-page,
+::before,
+::after,
+.con
+ {
     box-sizing: border-box;
-}
-
-* {
     margin: 0;
     padding: 0;
-}
-
-*,
- ::before,
-::after,
-.con {
-    box-sizing: border-box;
 }
 .text-dark {
     font-size: 14px;
 }
+.contact {
+    background-color: #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:0.5rem;
+}
+.contact-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+
+}
+.sp {
+    color: #fff;
+    padding-right: 20px;
+}
 /*about section styling*/
-.about-page {
+.heroSection {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(assets/why-us.png);
     background-size: cover;
     background-position: center;
@@ -62,21 +75,18 @@ li a {
     border-radius: 10px;
     padding-bottom: 5px;
 }
-.img01 {
+/* .img01 {
     width: 250px;
     height: 200px;
     min-width: 100px;
     min-height: 100px;
-}
+} */
 /*media query for mobile*/
-@media only screen and (max-width: 280px) {
-    .pag1 {
+@media only screen and (min-width: 480px) {
+    .heroSection {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
         justify-content: center;
-        padding-top:200px;
-        height: 600px;
     }
     .img01 {
         padding-top: 30px;
@@ -167,25 +177,6 @@ li a {
 .offer {
     padding-top: 1em;
 }
-
-/*hr {
-    border: solid;
-    border-top: 3px double #333;
-    color: white;
-    overflow: visible;
-    text-align: center;
-    height: 5px;
-}
-
-hr:after {
-    background: #fff;
-    content: 'About us';
-    padding: 0 4px;
-    position: relative;
-    top: -13px;
-}
-*/
-
 /*hover */
 
 .nav-link:hover {
@@ -194,6 +185,7 @@ hr:after {
 
 .footer {
     width: 100%;
+    margin-top: 1rem;
     font-size: .9em;
     background-color: #333;
     color: #efefef;
@@ -229,10 +221,7 @@ hr:after {
         grid-template-columns: auto;
         grid-gap: 1em;
     }
-}
-
-@media only screen and (max-width: 768px) {
-    .about-page {
+    .heroSection {
         display: grid;
         grid-template-columns: auto;
         grid-gap: 1em;
@@ -287,7 +276,8 @@ hr:after {
 /* Button used to open the contact form - fixed at the bottom of the page */
 
 .open-button {
-    background-color: #555;
+    background-color: #4a95ff;
+    border-radius: 8px;
     color: white;
     padding: 16px 20px;
     text-align: center;
@@ -369,12 +359,9 @@ hr:after {
     opacity: 1;
 }
 /*footer styling*/
-.footer {}
 .fcon {
     display: flex;
-    margin: 40px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 100px;
 }
