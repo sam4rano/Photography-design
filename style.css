@@ -9,6 +9,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'montserrat', serif;
 }
 .text-dark {
     font-size: 14px;
@@ -40,11 +41,13 @@
     background-attachment: fixed;
     padding-top: 50px;
     padding-bottom: 50px;
-    height: 550px;
+    min-height: 500px;
+    max-width: 100%;
 }
 .abtext p {
     font-size: 20px;
     font-weight: lighter;
+    padding:1rem;
 }
 /*navbar styling*/
 #navbarlinks {
@@ -130,10 +133,19 @@ li a {
     }
 
 }
-@media only screen and (min-width: 360px) {
+@media only screen and (max-width: 360px) {
+    .contact {
+        display:flex;
+        flex-direction: column;
+    }
+    
     
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (max-width: 480px) {
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+    }
     
 }
 @media only screen and (min-width: 540px) {
@@ -267,8 +279,7 @@ li a {
 
 #contact {
     background: #efefef;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 1rem;
     color: #777;
 }
 
